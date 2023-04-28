@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    body {
+      /* background-color: rgb(236, 236, 227); */
+    }
+
+    nav {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: baseline;
+      height: 8%;
+      color: white;
+      cursor: pointer;
+      background: #000;
+    }
+
+    nav span {
+      margin: 0.1% auto;
+      font-weight: 900;
+      font-size: 1.8rem;
+      width: 100%;
+    }
+
+    div {
+      display: flex;
+      justify-content: right;
+      margin-top: 1.9%;
+      margin-left: 1%;
+      background-color: #fff;
+      width: 98vw;
+      /* align-items: center; */
+      /* font-weight: 900; */
+    }
+
+    div span {
+      font-weight: 900;
+      margin: 2px 5px;
+      font-size: 1.4rem;
+    }
+
+    .you {
+      padding: 0.5% 0.1%;
+      border-radius: 7px;
+      border: 2px solid lime;
+    }
+
+    .you span {
+      color: black;
+      /* background-color: black; */
+      border-radius: 5px;
+      padding: 0.3% 0.9%;
+      text-decoration-line: underline;
+      text-decoration-color: lime;
+    }
+
+    .ai {
+      padding: 0.5% 0.1%;
+      border-radius: 7px;
+      border: 2px solid aqua;
+    }
+
+    .ai span {
+      color: black;
+      /* background-color: black; */
+      border-radius: 5px;
+      padding: 0.3% 0.9%;
+      text-decoration-line: underline;
+      text-decoration-color: aqua;
+    }
+
+    p {
+      width: 95%;
+      background-color: #fff;
+      font-weight: 600;
+      border-radius: 7px;
+      padding: 0.5% 0.9%;
+      font-size: 1.2rem;
+      /* border: 1px solid black; */
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <span> Donut </span>
+  </nav>
+    <div class="ai">
+      <span>Donut-</span>
+      <p> Thanks for keeping patience! 😉</p>
+    </div>
+
+    <div class="you">
+      <span>You-</span>
+      <p>{{msg}}</p>
+    </div>
+
+    <div class="ai">
+      <span>Donut-</span>
+      <p> {{aiMsg}}</p>
+    </div>
+</body>
+
+</html>
