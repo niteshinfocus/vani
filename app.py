@@ -1,7 +1,8 @@
 from flask import Flask, redirect, request, url_for, render_template
-
+import os
 import openai
-openai.api_key = "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"
+
+api_key = os.environ['OPENAI_API_KEY']
 
 app = Flask(__name__)
 
